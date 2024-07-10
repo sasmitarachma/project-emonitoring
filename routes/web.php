@@ -3,8 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\SiaranPersController;
-
-
+use App\Http\Controllers\KontenLokalController;
+use App\Http\Controllers\SponsorshipController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,3 +23,6 @@ use App\Http\Controllers\SiaranPersController;
 
 Route::get('/', [DashboardController::class,'index']);
 Route::get('/siaranpers', [SiaranPersController::class,'index']);
+Route::get('/kontenlokal', [KontenLokalController::class,'index']);
+Route::get('/sponsorship', [SponsorshipController::class,'index']);
+
